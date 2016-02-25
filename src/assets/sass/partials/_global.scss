@@ -1,0 +1,97 @@
+body {
+  background: #000;
+
+  &::after{
+    content:" ";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:transparentize($secondary,0.9);
+    opacity:0;
+    z-index:2;
+    pointer-events:none;
+    animation:flicker 0.15s infinite;
+  }
+  // scanlines
+  &::before{
+    content:" ";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:linear-gradient(transparentize($secondary,1) 50%, transparentize(darken($secondary,10),0.75) 50%), linear-gradient(90deg,transparentize(#ff0000,0.94),transparentize(#00ff00,0.98),transparentize(#0000ff,0.94));
+    z-index:2;
+    background-size:100% 2px, 3px 100%;
+    pointer-events:none;
+  }
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 25vh;
+  margin-bottom: 0;
+  font-size: 2.65rem;
+}
+
+h1,
+a {
+  font-family: $font;
+  color: $primary;
+  text-align: center;
+  text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    width: $width;
+    margin: 0 auto;
+}
+
+p {
+  width: $width;
+  margin: 16px auto;
+  font-size: 10px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+p:nth-of-type(2) {
+    text-align: right;
+}
+
+#instructions {
+    width: $width;
+    margin: 0 auto;
+    font-family: $font;
+    line-height: 16px;
+    font-size: 10px;
+    color: $primary;
+    display: none;
+}
+
+li {
+    margin-bottom: 16px;
+}
+
+li:last-of-type {
+    margin-bottom: 0;
+}
+
+canvas {
+  border: 3px solid $primary;
+  margin: 16px auto 0;
+  width: $width;
+  display: block;
+}

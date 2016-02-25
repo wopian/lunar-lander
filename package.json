@@ -1,0 +1,41 @@
+{
+  "name": "Lunar Lander",
+  "version": "1.0.0",
+  "description": "Lunar Lander Web Game",
+  "author": "James Harris",
+  "license": "GNU-V3",
+  "private": true,
+  "contributors": [
+    {
+      "name" : "James Harris",
+      "email" : "wopiancitizen123@gmail.com",
+      "url" : "https://wopian.me"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "homepage": "https://wopian.me/lander",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wopian/lunar-lander"
+  },
+  "bugs": {
+    "url": "https://github.com/wopian/lunar-lander/issues"
+  },
+  "devDependencies": {
+    "glob": "^7.0.0",
+    "grunt": "~0.4.5",
+    "load-grunt-tasks": "^3.4.0",
+    "grunt-timer": "^0.6.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-htmlmin": "^0.6.0",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "jshint-stylish": "^2.1.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
