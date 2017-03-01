@@ -30,7 +30,7 @@
     "grunt-autoprefixer": "^3.0.3",
     "grunt-contrib-cssmin": "^2.0.0",
     "grunt-contrib-htmlmin": "2.2.0",
-    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-uglify": "^2.2.0",
     "grunt-contrib-concat": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
     "jshint-stylish": "^2.1.0"
