@@ -21,3 +21,6 @@ before_install:
 install: travis_retry npm install --save-dev
 
 script: grunt
+
+notifications:
+  email: false
